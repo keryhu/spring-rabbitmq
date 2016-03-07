@@ -1,0 +1,4 @@
+com/example/rabbit/RabbitConfig.class
+com/example/rabbit/Receiver.class
+com/example/rabbit/Sender.class
+com/example/SpringRabbitmqApplication.class
