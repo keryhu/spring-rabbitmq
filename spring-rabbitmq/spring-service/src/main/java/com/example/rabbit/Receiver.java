@@ -26,6 +26,7 @@ public class Receiver {
 		if(message.getBody()!=null){
 			print();
 		}
+	
 		
 	}
 	
@@ -34,11 +35,13 @@ public class Receiver {
     	System.out.println("正在调用print方法");
     }
 	
-   // @RabbitListener(queues = "spring-boots5")
-   // @RabbitHandler
-    public void r(){
-    	
-    	System.out.println("@RabbitHandler");
-    }
+    
+    @RabbitListener(queues = "my.request.queue")
+	public String receiveMessage2(String s){
+		
+    	return s.toUpperCase();
+		
+	}
+   
 
 }

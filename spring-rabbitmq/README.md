@@ -29,4 +29,5 @@ above ,it create a new user and password .and delelte default "guest":"guest" us
 实现的功能：
  1 topic exchange，点对点的消息发送和接受
  2 fanout exchange  广播式消息发送，1个发送体，多个接受者的功能。
+ 3 增加了发送消息的retry功能
 	
